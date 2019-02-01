@@ -22,13 +22,5 @@ namespace Json_Serialization
         {
             return JsonConvert.DeserializeObject<Company[]>(GetJsonData(url));
         }
-
-  
-
-
-
-
-
-
     }
 }
