@@ -32,8 +32,7 @@ namespace Json_Serialization
 
         public override string ToString()
         {
-            return $"{ID}\n{Name}\n{Description}\n{Logo}\n{About}\n{Created}\n{Rating}\n{BillingPlan}\n{ID1}\n{new string('-', 50)}";
-
+            return $"ID = {ID}\nName = {Name}\nDescription = {Description}\nLogo = {Logo}\nAbout = {About}\nCreated = {Created}\nRating = {Rating}\nBillingPlan = {BillingPlan}\nID1 =  {ID1}\n{new string('-', 50)}";
         }
 
     }

@@ -13,8 +13,12 @@ namespace Json_Serialization
     {
         public static string GetJsonData(string url)
         {
-            WebClient wrb = new WebClient();
-            StreamReader st = new StreamReader(wrb.OpenRead(url));
+            WebClient webC = new WebClient();
+
+            Stream str = webC.OpenRead(url);
+
+            StreamReader st = new StreamReader(str);
+
             return st.ReadToEnd();
         }
 
